@@ -1,0 +1,25 @@
+== Severalections
+
+__Manipulate several visual selections as once__
+
+TIP: If you like Severalections and want to share the W00t!, I'm grateful for
+https://www.gittip.com/bairuidahu/[tips] or
+http://of-vim-and-vigor.blogspot.com/[beverages].
+
+=== Usage
+
+* Make a visual selection and then type `<leader>v` to push it onto a stack of remembered selections.
+* Keep making selections in this manner as necessary.
+* Use the `:Severalections visual-mode-command` command to perform the given command on each visual selection in turn.
+
+=== `<leader>v` in visual mode
+
+Pushes the current visual selection onto a stack and keeps the visual highlight in the buffer.
+
+=== :Severalections `visual-mode-command`
+
+The provided visual mode command will be executed on the stack of visual selections.
+
+=== :SeveralectionsPrior
+
+Use this command to redisplay the visual markup for the prior set of visual regions.
